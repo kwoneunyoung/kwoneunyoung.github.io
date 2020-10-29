@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
   background: rgba(242, 242, 242, .6);
   margin: 0;
 }
@@ -245,7 +245,7 @@ h4 {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: #fff;
+  background: #ffa801;
   color: #fff;
   -webkit-transition: .5s ease all;
   transition: .5s ease all;
@@ -272,4 +272,11 @@ h4 {
 
 .white-text {
   color: white;
+}
+
+.content-body h3 {
+  text-align: center;
+}
+.content-body P {
+  text-align: center;
 }
