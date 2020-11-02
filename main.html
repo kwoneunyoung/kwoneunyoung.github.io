@@ -17,7 +17,7 @@
 </head>
     <body>
         
-        <div id="fullpage">
+       
             <div class="nav">
                 <ul>
                     <br><br>
@@ -40,20 +40,51 @@
             </div>
         
 
-           
-            <div class="section active" id="section0">
-                    <div class="main1"><br>
-                        <h1>About Me</h1><br>
-                        <p>"신입 웹 개발자 권은영입니다."</p><br>
-                        <h3>전 회사에서 MD로 근무 했을 때 였습니다. </h3>
-                        
-                    </div>
-            </div>
+            <div id="fullpage">
+                <div class="section active" id="section0">
+                        <div class="main1"><br>
+                            <h1>About Me</h1><br>
+                            <p>신입 웹 개발자 권은영입니다.</p><br><br><br>
+                            <h3>"안녕하세요. 모든 일을 편하고! 빠르게! 처리하는 개발자가 되고 싶은 권은영이라고 합니다."</h3><br><br>
+                            <h4>전 회사에서 MD로 근무 했을 때 였습니다. 저는 매주 금요일 고객들의 상품평을 취합하여 그에 맞는 이벤트 상품을 지급하는 일을 했습니다.</h4>
+                            
+                        </div>
+                 </div>
+
                 <div class="section active" id="section1">
+                    <div class="main2"><br>
+                        <h1>Tech Skills</h1><br><br>
+                        <p>저는 지금 이것을 할 수 있습니다.</p><br><br><br>
+                        <h3>개발의 처음 시작은 JAVA로 시작 했습니다.</h3>
+                    </div>
+                </div>
+
+                <div class="section active" id="section2">
+                    <div class="main3"><br>
+                        <h1>My Work-PROJECT</h1><br><br>
+                        <p>개인 프로젝트 & 팀 프로젝트</p><br><br><br>
+                        <h3>웅앵</h3>
+                    </div>
+                </div>
+                
+                <div class="section active" id="section3">
+                    <div class="main4"><br>
+                        <h1>what I did?</h1><br><br>
+                        <p>여러가지 경험들</p><br><br><br>
+                        <h3>저는 '이러한 경험'을 해보았습니다.</h3>
+                    </div>
                 </div>
         
+                <div class="section active" id="section4">
+                    <div class="main5"><br>
+                        <h1>Get In touch-Contact</h1><br><br>
+                        <p>성실히, 꾸준히 회사와 함께 성장 해나가는 인재가 되고 싶습니다.</p><br><br><br>
+                        <h3>웅앵웅</h3>
+                    </div>
+                </div>
+
         
-        </div>
+             </div>
                
                   
     
@@ -62,6 +93,15 @@
 <script>
     var myFullpage = new fullpage('#fullpage', {
         lazyLoad: true,
+        onLeave : function(orgin, destination, direction) {
+            var params={destination:destination};
+            if(params["destination"]["index"]>0) {
+                $(".nav").addClass(".fix");
+            } else {
+                $(".nav").removeClass(".fix");
+            }
+            
+        }
     });
 </script>
 </body>

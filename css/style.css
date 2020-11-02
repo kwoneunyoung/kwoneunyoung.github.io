@@ -6,8 +6,12 @@
     padding: 0;
     background-color: #f1f1f1;
     overflow: auto;
-    position: fixed;
+    position: absolute;
+    z-index: 999;
     left: 0;
+}
+.nav .fix{
+    position: fixed;
 }
 
 .nav li a {
@@ -49,6 +53,13 @@
     height: 100%;
     
 }
+.main2 {
+    background-color: #fff;
+    position: relative;
+    margin-left: auto;
+    width: 80%;
+    height: 100%;
+}
 .main1 h1 {
     text-align: left;
     margin-left: 30px;
@@ -68,7 +79,115 @@
  .main1 h3 {
     text-align: left;
     margin-left: 30px;
-    color:#747d8c;
-   
-    
  }
+ .main1 h4 {
+    text-align: left;
+    margin-left: 30px;
+    color: darkgrey;
+ }
+ .main2 h1 {
+    text-align: left;
+    margin-left: 30px;
+    color:#000;
+    font: 0.8rem;
+    font-family: 'Indie Flower', cursive;
+    color: #222f3e;
+    margin-top: 100px;
+}
+.main2 p {
+    font-size: 1.5rem;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+}
+.main2 h3 {
+    text-align: left;
+    margin-left: 30px;
+    color: darkgrey;
+ }
+ .main3 {
+    background-color: #fff;
+    position: relative;
+    margin-left: auto;
+    width: 80%;
+    height: 100%;
+}
+ .main3 h1 {
+    text-align: left;
+    margin-left: 30px;
+    color:#000;
+    font: 0.8rem;
+    font-family: 'Indie Flower', cursive;
+    color: #222f3e;
+    margin-top: 100px;
+}
+.main3 p {
+    font-size: 1.5rem;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+}
+.main3 h3 {
+    text-align: left;
+    margin-left: 30px;
+    color: darkgrey;
+}
+.main4 {
+    background-color: #fff;
+    position: relative;
+    margin-left: auto;
+    width: 80%;
+    height: 100%;
+}
+.main4 h1 {
+    text-align: left;
+    margin-left: 30px;
+    color:#000;
+    font: 0.8rem;
+    font-family: 'Indie Flower', cursive;
+    color: #222f3e;
+    margin-top: 100px;
+}
+.main4 p {
+
+    font-size: 1.5rem;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+}
+.main4 h3 {
+    
+    text-align: left;
+    margin-left: 30px;
+    
+}
+.main5 {
+    background-color: #fff;
+    position: relative;
+    margin-left: auto;
+    width: 80%;
+    height: 100%;
+}
+.main5 h1 {
+    text-align: left;
+    margin-left: 30px;
+    color:#000;
+    font: 0.8rem;
+    font-family: 'Indie Flower', cursive;
+    color: #222f3e;
+    margin-top: 100px;
+}
+.main5 p {
+
+    font-size: 1.5rem;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+}
+.main5 h3 {
+    
+    text-align: left;
+    margin-left: 30px;
+    color: darkgrey;
+}
+
