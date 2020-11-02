@@ -83,7 +83,7 @@
  .main1 h4 {
     text-align: left;
     margin-left: 30px;
-    color: darkgrey;
+    color:#bdc3c7;
  }
  .main2 h1 {
     text-align: left;
@@ -217,13 +217,23 @@
   animation: progress-2 3s ease-in-out forwards;
     -webkit-animation: progress-2 3s ease-in-out forwards;
 }
+.progress-value.pink {
+  background-color: #e84393;
+ animation: progress-4 3s ease-in-out forwards;
+   -webkit-animation: progress-4 3s ease-in-out forwards;
+}
+.progress-value.blue {
+  background-color: #00cec9;
+ animation: progress-5 3s ease-in-out forwards;
+   -webkit-animation: progress-5 3s ease-in-out forwards;
+}
 /* animation */
  @keyframes progress {
   from {
     width: 0;
   }
   to {
-    width: 10%;
+    width: 80%;
   }
 }
  @-webkit-keyframes progress {
@@ -231,7 +241,7 @@
     width: 0;
   }
   to {
-    width: 10%;
+    width: 80%;
   }
 }
  @keyframes progress-2 {
@@ -255,7 +265,7 @@
     width: 0;
   }
   to {
-    width: 90%;
+    width: 70%;
   }
 }
  @-webkit-keyframes progress-3 {
@@ -263,9 +273,82 @@
     width: 0;
   }
   to {
-    width: 90%;
+    width: 70%;
+  }
+}
+@keyframes progress-4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+ @-webkit-keyframes progress-4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes progress-5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+ @-webkit-keyframes progress-5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
   }
 }
 #wh-pro {
-  margin-left: 150px;
+  margin-left: 30px;
 }
+#wh-pro p {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 0.8rem;
+}
+
+.note1 {
+  margin-left: 30px;
+  position:relative;
+  background:#B2CCFF;
+  width:300px;
+  max-width: 100%;
+  text-align: center;
+  padding: 12px;
+  color:black;
+  }
+
+.note1:before {
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  border-width:0 16px 16px 0; 
+  border-style:solid;
+  border-color: #FFFFFF #FFFFFF #0054FF #0054FF; 
+  background: #0054FF; 
+  display:block; width:0;   
+}
+
+.txtBox10bg, .txtBox11bg, .txtBox12bg, .txtBox13bg, .txtBox14bg {
+   border-style: solid; border-width: 0 0 0 8px; padding: 12px; word-break: break-all; 
+   margin-left: 30px;
+
+  } .txtBox10bg { border-color: LightGray; background-color:rgba(211, 211, 211, 0.2); } 
+  .txtBox11bg { border-color: DodgerBlue; background-color:rgba(30, 144, 255, 0.2); } 
+  .txtBox12bg { border-color: LightSalmon; background-color:rgba(255, 160, 122, 0.2); } 
+  .txtBox13bg { border-color: Tomato; background-color:rgba(255, 99, 71, 0.2); } 
+  .txtBox14bg { border-color: Crimson; background-color:rgba(237, 20, 61, 0.2); }
+
+
+
+
