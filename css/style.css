@@ -1,14 +1,16 @@
-.nav ul {
+.nav {
+    width: 20%;
+    height: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 20%;
-    height: 100%;
     background-color: #f1f1f1;
     overflow: auto;
     position: fixed;
     left: 0;
 }
+
+
 .nav li a {
     display: block;
     color: #000;
@@ -29,7 +31,6 @@
     color: #000;
 }
 
-
 .nav h1 {
     text-align: center;
     font-family: 'Do Hyeon', sans-serif;
@@ -40,4 +41,17 @@
     text-align: center;
     font-family: 'Do Hyeon', sans-serif;
     
+}
+.main {
+    background-color: #fff;
+    position: relative;
+    margin-left: auto;
+    width: 80%;
+    height: 100%;
+}
+.main h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    background-color:black;
+    color:#fff;
 }
