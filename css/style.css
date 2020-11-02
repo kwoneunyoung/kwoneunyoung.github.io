@@ -103,7 +103,7 @@
 .main2 h3 {
     text-align: left;
     margin-left: 30px;
-    color: darkgrey;
+    
  }
  .main3 {
     background-color: #fff;
@@ -190,4 +190,82 @@
     margin-left: 30px;
     color: darkgrey;
 }
-
+.progress-bar {
+    margin-bottom: 1rem;
+    background-color: lightgray;
+    border-radius: 1.25em;
+    width: 300px;
+    height: 16px;
+    display: inline-block;
+}
+.progress-value {
+    background-color: #673ab7;
+    transition: 0.3s all linear;
+    border-radius: 1.25em;
+    height: 16px;
+    display: inline-block;
+    animation: progress 3s ease-in-out forwards;
+    -webkit-animation: progress 3s ease-in-out forwards;
+}
+.progress-value.green {
+    background-color: #4CAF50;
+    animation: progress-3 3s ease-in-out forwards;
+    -webkit-animation: progress-3 3s ease-in-out forwards;
+}
+.progress-value.yellow {
+   background-color: #ff9800;
+  animation: progress-2 3s ease-in-out forwards;
+    -webkit-animation: progress-2 3s ease-in-out forwards;
+}
+/* animation */
+ @keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10%;
+  }
+}
+ @-webkit-keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10%;
+  }
+}
+ @keyframes progress-2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+ @-webkit-keyframes progress-2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+ @keyframes progress-3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+ @-webkit-keyframes progress-3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+#wh-pro {
+  margin-left: 150px;
+}
