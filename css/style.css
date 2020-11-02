@@ -41,7 +41,7 @@
     font-family: 'Do Hyeon', sans-serif;
     
 }
-.page_container {
+.main1 {
     background-color: #fff;
     position: relative;
     margin-left: auto;
@@ -49,10 +49,11 @@
     height: 100%;
     
 }
-.page_container h1 {
-  
+.main1 h1 {
     text-align: left;
     margin-left: 10px;
     color:#000;
+    font: 1.5rem;
     
 }
+ 
