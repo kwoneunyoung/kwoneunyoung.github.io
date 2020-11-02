@@ -14,17 +14,18 @@
     margin-left: 10px;
     font-family: 'Do Hyeon', sans-serif;
     font-size: 1.25em;
+    color:#bdc3c7;
 }
 .main li a.active {
     background-color: #f1f1f1;
     color: #000;
 }
 .main li a:hover:not(.active) {
-    background-color: #555;
+    background-color: #95a5a6;
     color: #000;
 }
 .main {
-    position: fixed;
+    position: relative;
     left: 0;
 }
 .main h1 {
