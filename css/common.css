@@ -1,0 +1,13 @@
+body{background: black;}
+header{position: fixed; left: 0; top: 0; width: 15%; height: 100%;  background: gray; padding: 20px;}
+header>*{margin-bottom: 20px;}
+
+.groupInfo dt{font-size: 20px; font-weight: 600; margin-bottom: 10px;}
+.allInfo li{margin: 5px 0;}
+
+.projectSearch{position: relative; background: white; height: 30px; line-height: 30px; border-radius: 30px; margin: 5px 0;}
+.projectSearch input[type="text"]{width: 70%; font-size: 14px; background: transparent; margin: 0 10px;}
+.projectSearch input[type="button"]{background: #ddd; cursor: pointer; position: absolute; width: 15px; height: 15px; right: 20px; top: 50%; transform: translateY(-50%); }
+
+.projectList h3{padding: 10px 0; font-weight: 400;}
+.projectList>li li{margin: 5px;}
