@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    $('.accordion-list > li > .answer first').slideUp();
+      
     $('.accordion-list > li > .answer').hide();
       
     $('.accordion-list > li').click(function() {
