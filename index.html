@@ -24,24 +24,26 @@
    
 </head>
     <body>
-        
             <div class="nav">
                 <ul>
                     <li><img src="img/pic.jpg" style="border-radius: 70%; margin-left:80px; height:130px;"></li><br> 
                     <li><h1>EunYoung-Kwon</h1></li><br>
                     <li><h3>Web Developer</h3></li>
-                    
+
                     <header id="fp-nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="" style="margin-top: 30px;">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Career</a></li>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">Contact</a></li>
+                        <ul>
+                            <li><a href="" style="margin-top: 30px;">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Skills</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Career</a></li>
+                            <li><a href="">Experience</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </header>
                 </ul>
             </div>
-        </header>
+        
         
             <div id="fullpage">
                 <div class="section active" id="section0">
@@ -52,7 +54,8 @@
                             <strong>Your browser does not support the video tag.</strong>
                             </video>
                                 <div class="jb-text">
-                                <p>시발 뭐라적지.</p>
+                                <p>Hello.</p><br><br><br>
+                                <p>I'm new Developer!</p>
                                 </div>
                         </div>
                     </div>
@@ -245,15 +248,19 @@
 
         </div>
             
-                
-
-
       
         <script>
             var myFullpage = new fullpage('#fullpage', {
                 lazyLoad: true,
+                afterLoad: function(anchorLink, index){
+                    var idx = $("#fullpage > div.active").index();
+                    $("header ul li").removeClass("active");
+                    $("header ul li").eq(idx).addClass("active");
+                },
                 onLeave : function(orgin, destination, direction) {
                     var params={destination:destination};
+                    
+                    
                     if(params["destination"]["index"]>0) {
                         $(".nav").addClass(".fix");
                     } else {
