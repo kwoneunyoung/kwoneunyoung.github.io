@@ -1,4 +1,4 @@
-.nav {
+#fp-nav{
     width: 20%;
     height: 100%;
     list-style-type: none;
@@ -10,11 +10,11 @@
     z-index: 999;
     left: 0;
 }
-.nav .fix{
+#fp-nav .fix{
     position: fixed;
 }
 
-.nav li a {
+#fp-nav li a {
     display: block;
     color: #000;
     padding: 15px 40px;
@@ -26,18 +26,18 @@
     font-family: 'Ubuntu', sans-serif;
    
   }
-.nav li h3 {
+  #fp-nav li h3 {
   color: #bdc3c7;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 
-.nav li a:hover {
+#fp-nav li a:hover {
     background-color: #FFF;
     color: #000;
 }
 
-.nav h1 {
+#fp-nav h1 {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.0em;
