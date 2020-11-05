@@ -17,14 +17,14 @@
 .nav li a {
     display: block;
     color: #000;
-    padding: 8px 16px;
+    padding: 15px 40px;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     font-size: 1.25em;
     color:#bdc3c7;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
-    margin-top: 8px;
+   
   }
 .nav li h3 {
   color: #bdc3c7;
@@ -44,6 +44,8 @@
 }
 
 .main1 {
+    padding-top: 30px;
+    box-sizing: border-box;
     background-color: #fff;
     position: relative;
     margin-left: auto;
@@ -61,6 +63,7 @@
     font-size: 1.25rem;
     font-family: 'Indie Flower', cursive;
     color: #2f3542;
+    margin-bottom: 20px;
 }
 .main1 p {
     font-size: 1.5rem;
@@ -85,21 +88,24 @@
  }
 
  .main2 {
+  padding-top: 30px;
+  box-sizing: border-box;
   background-color: #fff;
   position: relative;
   margin-left: auto;
   width: 80%;
   height: 100%;
   
+  
 }
 .main2 h1 {
-  margin-top: 100px;
   text-align: left;
   margin-left: 30px;
   color:#000;
   font-size: 1.25rem;
   font-family: 'Indie Flower', cursive;
   color: #2f3542;
+  margin-bottom: 20px;
 }
 .main2 p {
   font-size: 1.5rem;
@@ -388,7 +394,4 @@
         background-size: cover;
         }
         
-        .section:not(:first-child) {
-          padding-top: 30px;
-          box-sizing: border-box;
-        }
+       
