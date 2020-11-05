@@ -11,16 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src=js/fullpage.js></script>
-
-    <script src=js/main.js></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate.min.js"></script>
+    <script src="js/main.js"></script>
    
 </head>
     <body>
@@ -37,10 +40,15 @@
                             <li><a href="">Skills</a></li>
                             <li><a href="">Projects</a></li>
                             <li><a href="">Career</a></li>
-                            <li><a href="">Experience</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="">Experience</a></li><br><br>
                         </ul>
                     </header>
+
+                    <ul class="contact">
+                        <li><a>PHONE<br>010.7123.0374</a></li>
+                        <li><a>E-MAIL<br>dmsdud4972@gmail.com</a></li>
+                    </ul>
+
                 </ul>
             </div>
         
@@ -54,8 +62,8 @@
                             <strong>Your browser does not support the video tag.</strong>
                             </video>
                                 <div class="jb-text">
-                                <p>Hello.</p><br><br><br>
-                                <p>I'm new Developer!</p>
+                                <p>Hello. <br>
+                                    I'm new Developer!</p>
                                 </div>
                         </div>
                     </div>
@@ -139,7 +147,30 @@
                     <div class="main1">
                         <h1>My Work-PROJECT</h1>
                         <p>프로젝트</p><br>
-                        <h3>웅앵</h3>
+                        <div class="mainRolling">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <dl class="swiperText">
+                                            <dt>
+                                                <p class="tit">I'm <br>New<br>Developer</p>
+                                                <h4>ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h4>
+                                                <p class="txt"></p>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <dl class="swiperText sec">
+                                            <dt>
+                                                <p class="tit">Follow<br>Your<br>Dream</p>
+                                                <p class="txt"></p>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination_main"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             
@@ -222,55 +253,61 @@
                             <div class="txtBox14bg"><h3>프로젝트 활동</h3><br>
                                 프로그래밍을 배우며 3개의 웹 프로젝트들을 진행하였고, 리더쉽과 팀원들 간의 소통에 대해 깨닫고 직접 실천 할 수 있었습니다.  
                             </div><br>
-
-                            
-                            
                     </div>
                 </div>  
 
-                <div class="section active" id="section6">
-                    <div class="main1">
-                        <h1>Get In touch-Contact</h1>
-                        <p>성실히, 꾸준히 회사와 함께 성장 해나가는 인재가 되고 싶습니다.</p><br>
-                        
-
-                        <div class="note1">
-                            <p><오래 달리기>를 잘 하는 개발자가 되겠습니다.</p>
-                            <h3>오래 달리기는 모두가 시작점에서 동시에 출발하게 되지만, 결국 1등은 페이스를 유지하며 지치지 않고 달린 사람이 차지 하게 됩니다.<br>
-                                잘하는, 열심히 하는 마음도 중요하지만
-                                오래 달리기처럼 포기 하지 않고 끝까지 매달려야 하는 분야가 개발이라고 생각합니다. <br>
-                                저는 늘 빨리 달리기 보다 오래 달리기에 더 자신 있는 학생이었습니다. <br><br>
-                                학생 때부터 가꿔 온 근성과 끈기로 '꾸준히 오래 롱런하는 개발자'가 되겠다고 약속 드리겠습니다.
-                            </div>
-                    </div>
-                </div>
             </div>
 
         </div>
             
       
         <script>
-            var myFullpage = new fullpage('#fullpage', {
-                lazyLoad: true,
-                afterLoad: function(anchorLink, index){
-                    var idx = $("#fullpage > div.active").index();
-                    $("header ul li").removeClass("active");
-                    $("header ul li").eq(idx).addClass("active");
-                },
-                onLeave : function(orgin, destination, direction) {
-                    var params={destination:destination};
-                    
-                    
-                    if(params["destination"]["index"]>0) {
-                        $(".nav").addClass(".fix");
-                    } else {
-                        $(".nav").removeClass(".fix");
-                    }
-                    
-                }
-            });
 
-        
+            $(document).ready(function(){
+                /* swiper */
+                var slides = $('.swiper-slide');
+                var mySwiper = new Swiper('.swiper-container', {
+                    spaceBetween: 0,
+                    centeredSlides: true,
+                    pagination: {
+                        el: '.swiper-pagination_main',
+                        clickable: true,
+                    },
+                    // autoplay: {
+                    //     delay:7000,
+                    //     disableOnInteraction: false,
+                    // },
+                    // speed : 1000,
+                    on: {
+                            init: function(){
+                            swiperAnimateCache(this);
+                            swiperAnimate(this);
+                        },
+                        slideChangeTransitionEnd: function(){ 
+                            swiperAnimate(this);
+                        }
+                    } 
+                });
+                var myFullpage = new fullpage('#fullpage', {
+                    lazyLoad: true,
+                    afterLoad: function(anchorLink, index){
+                        var idx = $("#fullpage > div.active").index();
+                        $("header ul li").removeClass("active");
+                        $("header ul li").eq(idx).addClass("active");
+                    },
+                    onLeave : function(orgin, destination, direction) {
+                        var params={destination:destination};
+                        
+                        
+                        if(params["destination"]["index"]>0) {
+                            $(".nav").addClass(".fix");
+                        } else {
+                            $(".nav").removeClass(".fix");
+                        }
+                        
+                    }
+                });
+            });
         </script>
     </body>
 </html>
