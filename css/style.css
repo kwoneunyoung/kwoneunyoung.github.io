@@ -334,7 +334,9 @@ header ul li.active a {
   .jb-box { width: 100%; height: 1000px; overflow: hidden; margin: 0px auto; position: relative; }
   video { width: 100%; }
   .jb-text { position: absolute; top: 50%; width: 100%; }
-  .jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #333; }
+  .jb-text p { margin-top: -24px; ; font-size: 60px; color: #333; font-weight: bold;
+    margin-left: 1000px;
+} }
 
   .maindark{
     position: absolute;
@@ -460,7 +462,7 @@ header ul li.active a {
       .mainRolling .swiper-pagination_main .swiper-pagination-bullet { border-radius:0; width:8px; height:8px; margin-right:20px; background-color: #bdc3c7; opacity:1; border-radius: 8px; }
       .mainRolling .swiper-pagination-bullet-active {width:70px !important; height:8px; background-color: #333 !important;}
 
-      .mainRolling .swiperText{ width: 40%; z-index: 20; left: 20%; top: -50%; text-align: left; transition: all .5s; }
+      .mainRolling .swiperText{ width: 80%; z-index: 20; left: 20%; top: -50%; text-align: left; transition: all .5s; }
       .mainRolling .swiper-slide.animate .swiperText{top: 30%; }
       .mainRolling .swiper-slide.animate .swiperText dd a{opacity: 1; transition-delay: .5s; transition-duration: .5s;}
       .swiperText dt{margin-bottom: 30px;}
@@ -469,9 +471,45 @@ header ul li.active a {
       .swiperText .txt{font-size: 1.5rem; font-weight: 400;}
       .swiperText dd a{display: inline-block; opacity: 0; background: #fd9f3b; color: #333; font-size: 1rem; font-weight: 500; width: 180px; height: 48px; border-radius: 48px; text-align: center; line-height: 48px;}
       
-
-
       .mainRolling h5 {
         margin-left: 35px;
         line-height: 30px;
+        padding-top: 25px;
+        
       }
+
+      .mainRolling #source {
+       border-radius: 50px;
+       padding: 20px;
+       background-color: #ddd;
+       color: #333;
+       font-size: 1.0rem;
+       font-weight: bold;
+       cursor: pointer;
+
+      }
+
+      .mainRolling #source:hover{
+        box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
+        color: #fff;
+ 
+       }
+      .mainRolling #port {
+        border-radius: 50px;
+        padding: 20px;
+        background-color: #ddd;
+        color: #333;
+        font-size: 1.0rem;
+        font-weight: bold;
+        cursor: pointer;
+ 
+       }
+
+       .mainRolling #port:hover {
+        box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
+        color: #fff;
+ 
+       }
+       .mainRolling .buttons {
+        float:right;
+       }
