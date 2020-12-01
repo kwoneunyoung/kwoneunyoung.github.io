@@ -3,19 +3,25 @@
     margin: 0 auto; /*가운데정렬*/
 }
 
-.join_chang { 
+.joinMain { 
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
-.join_chang h2 {
+.joinMain h2 {
     font-weight: bold;
 }
-.join_chang p {
+.joinMain p {
     color: #636e72;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.joinForm {
+.joinMainK {
     border: 1px solid gainsboro;
+    width: 80%;
+    margin: auto; /*가운데 정렬*/
+    padding: 1%;
+    margin-bottom: 3%;
+    box-sizing: border-box;
 }
