@@ -1,0 +1,21 @@
+.whole_form {
+    width: 80%;
+    margin: 0 auto; /*가운데정렬*/
+}
+
+.join_chang { 
+    text-align: center;
+    margin-top: 50px;
+}
+
+.join_chang h2 {
+    font-weight: bold;
+}
+.join_chang p {
+    color: #636e72;
+    margin-top: 15px;
+}
+
+.joinForm {
+    border: 1px solid gainsboro;
+}
