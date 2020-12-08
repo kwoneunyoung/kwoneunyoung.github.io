@@ -25,3 +25,40 @@
     margin-bottom: 3%;
     box-sizing: border-box;
 }
+.table table {
+    width: 90%;
+}
+
+.smallMG {
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
+
+.table tr {
+    border-top: 1px solid #ddd;
+}
+
+.table tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    font-weight: 400;
+    padding: 10px;
+    background: #efefef;
+    vertical-align: middle;
+}
+
+.table td {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.table caption {
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
