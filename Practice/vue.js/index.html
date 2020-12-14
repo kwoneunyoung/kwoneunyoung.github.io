@@ -8,7 +8,9 @@
 </head>
 <body>
     <div id="app">
-       {{ nextYear() }}
+       {{ nextYear('안녕') }}
+       <input :type="type" :value="inputData">
+       <a :href="getNomiNaverLink('kossiecoder')">노미 코더 채널</a>
     </div>
     <script>
         new Vue({
@@ -17,13 +19,21 @@
                 person : {
                     name : '노미코더',
                     age : 28
-                }
+                },
+                inputData: 'hello',
+                type:'text',
+                link: 'https://youtube.com/'
             },
             methods : {
-                nextYear: function() {
-                    return this.person.name + '는 내년에 ' + (this.person.age + 1) +'살 입니다';
-                }
-
+                getNomiNaverLink(channel) {
+                    return this.link + channel; 
+                },
+                nextYear(greeting) {
+                    return greeting + '! ' + this.person.name + '는 내년에 ' + (this.person.age + 1) +'살 입니다';
+                },
+            otherMethod : function() {
+                this.nextYear();
+            }
             }
         }) 
     </script>
