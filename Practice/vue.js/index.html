@@ -8,32 +8,28 @@
 </head>
 <body>
     <div id="app">
-       {{ nextYear('안녕') }}
-       <input :type="type" :value="inputData">
-       <a :href="getNomiNaverLink('kossiecoder')">노미 코더 채널</a>
+        <form v-on:submit.prevent="submit">
+            <input type="text"><br>
+            <button type="submit">Submit</button>
+        </form>
     </div>
     <script>
         new Vue({
             el : '#app',
             data : {
-                person : {
-                    name : '노미코더',
-                    age : 28
+                year:2018
                 },
-                inputData: 'hello',
-                type:'text',
-                link: 'https://youtube.com/'
-            },
             methods : {
-                getNomiNaverLink(channel) {
-                    return this.link + channel; 
+                plus() {
+                    this.year++;
                 },
-                nextYear(greeting) {
-                    return greeting + '! ' + this.person.name + '는 내년에 ' + (this.person.age + 1) +'살 입니다';
+                minus() {
+                    this.year--;
                 },
-            otherMethod : function() {
-                this.nextYear();
-            }
+                submit() {
+                    alert('submitted');
+                    console.log('hello');
+                }
             }
         }) 
     </script>
