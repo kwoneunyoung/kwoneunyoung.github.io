@@ -9,14 +9,14 @@
 <body>
     <div id="app">
         <button>컴포넌트 등록</button>
-        <my-component></my-component>
+        <my-component></my-component> 
+        
     </div>
     <script>
-        var cmp = {
-            //컴포넌트 내용
-            template : '<div>지역 컴포넌트가 등록 되었습니다!</div>'
-        };
-        
+      Vue.component('my-component', {
+          template:'<div>전역 컴포넌트가 등록 되었습니다!</div>'
+      });
+
         new Vue({ 
             el:'#app',
             data: {
