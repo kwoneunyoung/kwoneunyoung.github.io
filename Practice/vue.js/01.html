@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<body>
+    <div id="app">
+      <child-component v-on:show-log="printText"></child-component>
+    </div>
+    <script>
+        //child-component의 show버튼을 클릭하여 이벤트를 발생시키고, 발생한 이벤트로 상위 컴포넌트의 printText 메소드를 실행 시키는 코드
+
+        
+
+        Vue.component('child-component', {
+            template:'<button v-on:click="showLog">show</button>',
+            methods:{
+                showLog:function() {
+                    this.$emit('show-log');//이벤트 발생 로직
+                }
+            }
+        });
+
+        var app = new Vue({
+            el:'#app',
+            data: {
+                message:'Hello Vue! passed from Parent Component'
+            },
+            methods:{
+                printText: function() {
+                    console.log("received an event");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
